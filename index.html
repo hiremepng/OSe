@@ -1,35 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HireMePNG</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireMePNG - Career Hub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>HireMePNG</h1>
     <p>Connecting job seekers and recruiters in Papua New Guinea</p>
-  </header>
-
-  <main>
-    <section class="intro">
+  </header>  <nav>
+    <ul>
+      <li><a href="#jobs">Job Listings</a></li>
+      <li><a href="#upload">Upload CV</a></li>
+      <li><a href="#recruiter">Recruiter Access</a></li>
+      <li><a href="#payment">Make Payment</a></li>
+    </ul>
+  </nav>  <main>
+    <section id="welcome">
       <h2>Welcome!</h2>
       <p>This platform helps you find job opportunities or post job listings with ease.</p>
-    </section>
+    </section><section id="jobs">
+  <h2>Job Listings</h2>
+  <ul>
+    <li><strong>Administrative Assistant</strong> - Lae | <a href="#">More Info</a></li>
+    <li><strong>Warehouse Officer</strong> - Port Moresby | <a href="#">More Info</a></li>
+    <li><strong>Finance Officer</strong> - Mt Hagen | <a href="#">More Info</a></li>
+  </ul>
+</section>
 
-    <section class="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Job Listings</li>
-        <li>CV Upload & Management</li>
-        <li>Recruiter Access</li>
-        <li>Email Notifications</li>
-      </ul>
-    </section>
-  </main>
+<section id="upload">
+  <h2>Upload Your CV</h2>
+  <form name="cv-upload" method="POST" data-netlify="true">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
 
-  <footer>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="cv">Upload CV:</label><br>
+    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+
+    <button type="submit">Submit CV</button>
+  </form>
+</section>
+
+<section id="recruiter">
+  <h2>Recruiter Access</h2>
+  <p>If you're a recruiter, <a href="#">click here</a> to post jobs or review CVs.</p>
+</section>
+
+<section id="payment">
+  <h2>Make a Payment</h2>
+  <p>Please use the following bank details to make a payment:</p>
+  <ul>
+    <li><strong>Account Name:</strong> Yanis Alo</li>
+    <li><strong>Account Number:</strong> 7023751287</li>
+    <li><strong>Bank:</strong> Bank of South Pacific (BSP)</li>
+    <li><strong>Branch:</strong> Port Moresby</li>
+  </ul>
+  <p>Payments can be made via internet banking, mobile banking, or direct deposit at any BSP branch in PNG.</p>
+</section>
+
+  </main>  <footer>
     <p>&copy; 2025 HireMePNG. All rights reserved.</p>
   </footer>
 </body>
